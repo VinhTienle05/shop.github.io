@@ -1,0 +1,559 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>HTV Shop Product</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  
+
+  <link rel="stylesheet" href="css/buy.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <button style="margin-left: 10px; margin-right: 30px; font-size: 30px;" aria-label="Menu" class="menu-button" id="menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="logo">
+        <div class="logo-circle"><img style="border-radius: 100%; width: 30px;" src="Image/logo.png" alt="logo"></div>
+        <span style="font-style: normal;">HTV SHOP</span>
+      </div>
+    </div>
+    <div class="login">
+      <a class="login-right" href="login.html"><i class="fas fa-user"></i></a>  
+    </div>
+  </header>
+  <!-- Mobile menu -->
+  <nav aria-label="Mobile menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+    <div id="mobile-menu-header">
+      <h2>Menu</h2>
+      <button aria-label="Close menu" id="close-menu-btn">×</button>
+    </div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="overlay" tabindex="-1" aria-hidden="true"></div>
+  <!-- Main content -->
+  <main>
+    <div class="product-container">
+      <!-- Left side images -->
+      <section class="image-section" id="image-section">
+        <div class="main-image-wrapper">
+          <img
+            alt="Black unisex t-shirt front and back view with pink text and graphic design"
+            class="main-image"
+            height="360"
+            id="main-image"
+            src="Image/11.png"
+            width="360"
+          />
+          <p class="image-caption">The Monseue Gallery</p>
+        </div>
+        <div class="thumbnail-row" role="list">
+          <img
+            alt="Small thumbnail of black unisex t-shirt front and back view with pink design"
+            class="thumbnail selected"
+            height="70"
+            id="thumb-1"
+            role="listitem"
+            src="Image/11.png"
+            tabindex="0"
+            width="70"
+          />
+          <img
+            alt="Small thumbnail of pink heart and gun graphic on black t-shirt"
+            class="thumbnail"
+            height="70"
+            id="thumb-2"
+            role="listitem"
+            src="Image/11.1.png"
+            tabindex="0"
+            width="70"
+          />
+          <img
+            alt="Small thumbnail of pink text graphic on black t-shirt"
+            class="thumbnail"
+            height="70"
+            id="thumb-3"
+            role="listitem"
+            src="Image/11.2.png"
+            tabindex="0"
+            width="70"
+          />
+        </div>
+      </section>
+      <!-- Right side product info -->
+      <section class="product-info">
+        <h2 class="product-title">THE MONSEUE GALLERY UNISEX SHIRT</h2>
+        <p class="product-price">Prize: 250.000 VND</p>
+        <h3 class="section-title">Product Information:</h3>
+        <p class="product-description">
+          This is a unisex item, made from 100% premium cotton — soft,
+          breathable, and comfortable for everyday wear.
+        </p>
+        <p class="product-description">
+          Designed to fit both men and women with a relaxed silhouette.
+        </p>
+        <form aria-label="Product options form" id="product-form">
+          <fieldset>
+            <legend>Size</legend>
+            <div class="size-options" role="radiogroup" aria-label="Select size">
+              <button
+                type="button"
+                class="size-button selected"
+                data-size="S"
+                role="radio"
+                aria-checked="true"
+                tabindex="0"
+              >
+                S
+              </button>
+              <button
+                type="button"
+                class="size-button"
+                data-size="M"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+              >
+                M
+              </button>
+              <button
+                type="button"
+                class="size-button"
+                data-size="L"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+              >
+                L
+              </button>
+              <button
+                type="button"
+                class="size-button"
+                data-size="XL"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+              >
+                XL
+              </button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Color</legend>
+            <div class="color-options" role="radiogroup" aria-label="Select color">
+              <button
+                type="button"
+                class="color-button color-white selected"
+                data-color="white"
+                role="radio"
+                aria-checked="true"
+                tabindex="0"
+                aria-label="White color"
+              ></button>
+              <button
+                type="button"
+                class="color-button color-black"
+                data-color="black"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+                aria-label="Black color"
+              ></button>
+              <button
+                type="button"
+                class="color-button color-blue"
+                data-color="blue"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+                aria-label="Blue color"
+              ></button>
+              <button
+                type="button"
+                class="color-button color-red"
+                data-color="red"
+                role="radio"
+                aria-checked="false"
+                tabindex="-1"
+                aria-label="Red color"
+              ></button>
+            </div>
+          </fieldset>
+          <div>
+            <label for="quantity" class="quantity-label">Quantity</label>
+            <div class="quantity-controls">
+              <button type="button" id="qty-decrease" class="qty-button" aria-label="Decrease quantity">−</button>
+              <input
+                type="text"
+                id="quantity"
+                name="quantity"
+                class="qty-input"
+                value="1"
+                readonly
+                aria-live="polite"
+                aria-atomic="true"
+              />
+              <button type="button" id="qty-increase" class="qty-button" aria-label="Increase quantity">+</button>
+            </div>
+            <p class="size-guide">Size Guide</p>
+          </div>
+          <div class="btn-container">
+            <button type="button" id="add-to-cart" class="btn-add-cart">ADD TO CART</button>
+            <button type="button" id="buy-now" class="btn-buy-now">BUY NOW</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <!-- Other products section -->
+    <section class="other-products-section" aria-label="Other products">
+      <h3 class="other-products-title">OTHER PRODUCTS</h3>
+      <div class="carousel-wrapper">
+        <button aria-label="Previous" class="carousel-button left" id="prev-btn">❮</button>
+        <div class="products-container" id="products-container" tabindex="0">
+          <div class="product-card">
+            <img
+              src="Image/see1.jpg"
+              alt="Black long-sleeve shirt with red STAY LOYAL graphic on front"
+              class="product-image"
+              width="160"
+              height="200"
+            />
+            <p class="product-name">STAY LOYAL<br>GRAPHIC</p>
+            <p class="product-price">650.000VND</p>
+          </div>
+          <div class="product-card">
+            <img
+              src="Image/see2.jpg"
+              alt="Black shirt with Racionais Rap of Legend graphic on back"
+              class="product-image"
+              width="160"
+              height="200"
+            />
+            <p class="product-name">RACIONAIS RAP<br>OF LEGEND</p>
+            <p class="product-price">500.000VND</p>
+          </div>
+          <div class="product-card">
+            <img
+              src="Image/13.png"
+              alt="Black shirt with pink spider glow graphic on front"
+              class="product-image"
+              width="160"
+              height="200"
+            />
+            <p class="product-name">PINK VEMON SPIDER<br>GLOW UNISEX SHIRT</p>
+            <p class="product-price">550.000VND</p>
+          </div>
+          <div class="product-card">
+            <img
+              src="Image/angel.jpg"
+              alt="Brown shirt with retro angel graphic on back"
+              class="product-image"
+              width="160"
+              height="200"
+            />
+            <p class="product-name">BROWN RETRO<br>ANGEL</p>
+            <p class="product-price">500.000VND</p>
+          </div>
+        </div>
+        <button aria-label="Next" class="carousel-button right" id="next-btn">❯</button>
+      </div>
+      <div class="see-more-container">
+        <a href="product.html">
+          <button type="button" class="see-more-button" id="see-more-btn">SEE MORE</button>
+        </a>
+        
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <br>
+  <footer style="padding: 5px; padding-top: 20px;" id="contact" class="pt-4 pb-4 ">
+        <div class="container">
+            <div class="row-contact">
+                
+                <div class="col-md-4">
+                    <ul>
+                        <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
+                        <ul style="color: #c6c6c6;">
+                            <li>242 Thai Ha, Dong Da, Hanoi</li>
+                            <li>63 Dai Co Viet, Hai Ba Trung, Hanoi</li>
+                            <li>20 Duong Quang Ham, Cau Giay, Hanoi</li>
+                            <li>346 Cau Giay, Cau Giay, Hanoi</li>
+                            <li>116 Ho Tung Mau, Cau Giay, Hanoi</li>
+                        </ul>
+                        
+                        <br>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <h5 ><i class="fas fa-shield-alt"></i> Policies and general regulations</h5>
+                        <ul style="color: #c6c6c6;">
+                            <li>Shopping Guide</li>
+                            <li>Payment Methods</li>
+                            <li>Privacy Policy</li>
+                            <li>Warranty Policy</li>
+                            <li>Exchange Policy</li>
+                            <li>Shipping Policy</li>
+                            <li>Terms of Service</li>
+                            <li>About Us</li>
+                        </ul>
+                        
+                        <br>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <h5><i class="fas fa-flag"></i> Fanpage</h5>
+                        <ul style="color: #c6c6c6;">
+                            <!-- <img src="Image/end2.png" style="width: 100%;padding-bottom: 10px;" alt=""> -->
+                            <li><i class="fas fa-share-alt"></i> htvshop//http.com</li>
+                            <li><i class="fas fa-phone"></i>  032 9511 383 - 098 7654 321</li>
+                            <li><i class="fas fa-envelope"></i> htvshop.@gmail.com</li>
+                            <li><i class="fas fa-globe"></i> https://htvshop.vn</li>
+                        </ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const closeMenuBtn = document.getElementById("close-menu-btn");
+    const overlay = document.getElementById("overlay");
+
+    function openMenu() {
+      mobileMenu.classList.add("open");
+      mobileMenu.setAttribute("aria-hidden", "false");
+      overlay.classList.add("show");
+      document.body.style.overflow = "hidden";
+      closeMenuBtn.focus();
+    }
+    function closeMenu() {
+      mobileMenu.classList.remove("open");
+      mobileMenu.setAttribute("aria-hidden", "true");
+      overlay.classList.remove("show");
+      document.body.style.overflow = "";
+      menuBtn.focus();
+    }
+
+    menuBtn.addEventListener("click", openMenu);
+    closeMenuBtn.addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu);
+
+    // Close menu on Escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && mobileMenu.classList.contains("open")) {
+        closeMenu();
+      }
+    });
+
+    // Image thumbnails and main image switching
+    const mainImage = document.getElementById("main-image");
+    const thumbnails = [
+      {
+        id: "thumb-1",
+        src:
+          "Image/11.png",
+        alt: "Black unisex t-shirt front and back view with pink text and graphic design",
+      },
+      {
+        id: "thumb-2",
+        src:
+          "Image/11.1.png",
+        alt: "Black t-shirt with pink heart and gun graphic design",
+      },
+      {
+        id: "thumb-3",
+        src:
+          "Image/11.2.png",
+        alt: "Black t-shirt with pink text graphic",
+      },
+    ];
+
+    thumbnails.forEach(({ id, src, alt }) => {
+      const thumb = document.getElementById(id);
+      thumb.addEventListener("click", () => {
+        mainImage.src = src;
+        mainImage.alt = alt;
+        thumbnails.forEach(({ id: otherId }) => {
+          const otherThumb = document.getElementById(otherId);
+          if (otherId === id) {
+            otherThumb.classList.add("selected");
+          } else {
+            otherThumb.classList.remove("selected");
+          }
+        });
+      });
+      thumb.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          thumb.click();
+        }
+      });
+    });
+
+    // Initialize first thumbnail border highlight
+    document.getElementById("thumb-1").classList.add("selected");
+
+    // Size selection (radio button behavior)
+    const sizeButtons = document.querySelectorAll(".size-button");
+    let selectedSize = "S";
+    sizeButtons.forEach((btn, idx) => {
+      btn.addEventListener("click", () => {
+        sizeButtons.forEach((b) => {
+          b.classList.remove("selected");
+          b.setAttribute("aria-checked", "false");
+          b.setAttribute("tabindex", "-1");
+        });
+        btn.classList.add("selected");
+        btn.setAttribute("aria-checked", "true");
+        btn.setAttribute("tabindex", "0");
+        btn.focus();
+        selectedSize = btn.getAttribute("data-size");
+      });
+      btn.addEventListener("keydown", (e) => {
+        let newIndex = null;
+        if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+          newIndex = (idx + 1) % sizeButtons.length;
+        } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+          newIndex = (idx - 1 + sizeButtons.length) % sizeButtons.length;
+        }
+        if (newIndex !== null) {
+          e.preventDefault();
+          sizeButtons[newIndex].click();
+        }
+      });
+    });
+
+    // Color selection (radio button behavior)
+    const colorButtons = document.querySelectorAll(".color-button");
+    let selectedColor = "white";
+    colorButtons.forEach((btn, idx) => {
+      btn.addEventListener("click", () => {
+        colorButtons.forEach((b) => {
+          b.classList.remove("selected");
+          b.setAttribute("aria-checked", "false");
+          b.setAttribute("tabindex", "-1");
+        });
+        btn.classList.add("selected");
+        btn.setAttribute("aria-checked", "true");
+        btn.setAttribute("tabindex", "0");
+        btn.focus();
+        selectedColor = btn.getAttribute("data-color");
+      });
+      btn.addEventListener("keydown", (e) => {
+        let newIndex = null;
+        if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+          newIndex = (idx + 1) % colorButtons.length;
+        } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+          newIndex = (idx - 1 + colorButtons.length) % colorButtons.length;
+        }
+        if (newIndex !== null) {
+          e.preventDefault();
+          colorButtons[newIndex].click();
+        }
+      });
+    });
+
+    // Quantity controls
+    const qtyInput = document.getElementById("quantity");
+    const qtyDecrease = document.getElementById("qty-decrease");
+    const qtyIncrease = document.getElementById("qty-increase");
+
+    qtyDecrease.addEventListener("click", () => {
+      let current = parseInt(qtyInput.value);
+      if (current > 1) {
+        qtyInput.value = current - 1;
+      }
+    });
+    qtyIncrease.addEventListener("click", () => {
+      let current = parseInt(qtyInput.value);
+      qtyInput.value = current + 1;
+    });
+
+    // Add to cart and Buy now buttons
+    const addToCartBtn = document.getElementById("add-to-cart");
+    const buyNowBtn = document.getElementById("buy-now");
+
+    function validateSelection() {
+      if (!selectedSize) {
+        alert("Please select a size.");
+        return false;
+      }
+      if (!selectedColor) {
+        alert("Please select a color.");
+        return false;
+      }
+      return true;
+    }
+
+    addToCartBtn.addEventListener("click", () => {
+      if (!validateSelection()) return;
+      alert(
+        `Added to cart:\nProduct: THE MONSEUE GALLERY UNISEX SHIRT\nSize: ${selectedSize}\nColor: ${selectedColor}\nQuantity: ${qtyInput.value}`
+      );
+    });
+
+    buyNowBtn.addEventListener("click", () => {
+      if (!validateSelection()) return;
+      alert(
+        `Proceeding to buy:\nProduct: THE MONSEUE GALLERY UNISEX SHIRT\nSize: ${selectedSize}\nColor: ${selectedColor}\nQuantity: ${qtyInput.value}`
+      );
+    });
+
+    // Other products carousel scroll
+    const productsContainer = document.getElementById("products-container");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+
+    prevBtn.addEventListener("click", () => {
+      productsContainer.scrollBy({
+        left: -200,
+        behavior: "smooth",
+      });
+    });
+
+    nextBtn.addEventListener("click", () => {
+      productsContainer.scrollBy({
+        left: 200,
+        behavior: "smooth",
+      });
+    });
+
+    // Keyboard support for carousel scrolling
+    productsContainer.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        productsContainer.scrollBy({ left: 200, behavior: "smooth" });
+      } else if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        productsContainer.scrollBy({ left: -200, behavior: "smooth" });
+      }
+    });
+
+    // See more button (for demo, just alert)
+    const seeMoreBtn = document.getElementById("see-more-btn");
+    seeMoreBtn.addEventListener("click", () => {
+      alert("See more products clicked.");
+    });
+  </script>
+</body>
+</html>
