@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    color: white;
+}
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.wrapper{
+    width: 490px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #97888800;
+    backdrop-filter: blur(8px);
+    background-color: #e8e8e8;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #c66d70;
+}
+
+
+
+.name-container {
+    gap: 30px; /* Cách giữa */
+    display: flex; /* Hiển thị các phần tử con trên cùng một hàng */
+}
+
+.input-name {
+    
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0px; /* Thêm margin-right 10px để tạo khoảng cách */
+    flex: 10; /* Chia đều không gian giữa hai ô nhập liệu */
+    margin-left: 0px;
+
+}
+
+
+
+.input-name input {
+
+    width: 100%; /* Đảm bảo ô nhập liệu chiếm toàn bộ chiều rộng của input-name */
+    height: 40px;
+    color: #000;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-name label {
+    display: block; /* Hiển thị nhãn trên một dòng riêng */
+    position: absolute;
+    color: #656565;;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+
+.input-name input:focus~label,
+.input-name input:valid~label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+}
+
+
+
+.input-field{
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+}
+
+.input-field label{
+    position: absolute;
+    color: #656565;;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+
+.input-field input{
+    width: 100%;
+    height: 40px;
+    color: #000;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label{
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+}
+
+
+
+.wrapper a{
+    color: #916465;
+    text-decoration: underline;
+}
+.course-registe a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20%;
+    font-size: 16px;
+    background: #c66d70;
+    border-radius: 50px;transition: all 0.3s ease;
+}
+.course-registe button {
+    text-decoration: none;
+    background: #c26468;
+    color: #fff;
+    font-weight: 600;
+    width: 20%;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    
+}
+.course-registe :hover{
+    background: #a55053;
+    color: #fff;
+    padding: 12px 25%;
+}

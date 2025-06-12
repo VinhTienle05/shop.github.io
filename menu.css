@@ -1,0 +1,179 @@
+body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #fff;
+            padding-top: 70px; /* Để tránh nội dung bị che bởi top-bar ban đầu */
+            transition: padding-top 0.3s ease-in-out; /* Tạo hiệu ứng mượt cho padding */
+        }
+
+        .top-bar {
+            background-color: #C66D70;
+            color: white;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            height: 50px; /* Chiều cao ban đầu */
+            transition: transform 0.3s ease-in-out; /* Hiệu ứng ẩn/hiện */
+        }
+
+        .top-bar.hidden {
+            transform: translateY(-100%);
+        }
+
+        .top-bar-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%; /* Chiếm toàn bộ chiều rộng của top-bar */
+            padding: 0 20px; /* Thêm padding hai bên */
+            transition: opacity 0.3s ease-in-out; /* Hiệu ứng mờ dần */
+        }
+        .top-bar-content img{
+            width: 30px;
+            height: auto;
+            padding: 0;
+            margin-left: -20px;
+            margin-right: 10px;
+            border-radius: 50px;
+        }
+        .top-bar-content a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        
+       
+
+        .top-bar.hidden .top-bar-content {
+            opacity: 0;
+        }
+
+        
+
+        .login {
+            padding-right: 10px;
+        }
+        
+        .login-right i {
+            
+            
+            padding: 8px 9px;
+            background-color: #fff;
+            border: none;
+            border-radius: 50px;
+            color: #C66D70;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+       
+
+        .login-right :hover {
+            padding: 8px 20px;
+            background: #904c4e;
+            color: #f1eaea;
+        }
+        @media (hover: none) and (pointer: coarse) {
+            .login-right :hover {
+                color: initial; 
+                padding: 8px 9px;
+                
+            }
+        }
+
+
+
+        .menu-container {
+            position: relative;
+            margin-right: auto; /* Đẩy logo và login-right sang hai bên */
+        }
+
+        .menu-icon-container {
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            padding: 15px;
+        }
+
+        .main-menu {
+            
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #C66D70;
+            width: 200px;
+            box-shadow: 5px 11px 19px 5px rgb(0 0 0 / 10%);
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            margin-top: 0;
+            
+        }
+
+        .main-menu.open {
+            display: block;
+            margin-top: 12.1px; 
+            
+        }
+
+        .main-menu li a {
+            display: block;
+            padding: 10px 10px;
+            text-decoration: none;
+            color: #fff;
+            
+        }
+
+        .main-menu li a:hover,
+        .main-menu li a:focus {
+            background: #b45d60;
+            transition: all 0.2s;
+            
+        }
+    
+
+      
+
+        
+
+        
+        .submenu {
+            list-style: none;
+            
+            margin-left: -40px;
+            background-color: #C66D70;
+            position: relative;
+            
+            z-index: 10;
+            min-width: 150px;
+            display: none;
+        }
+        
+            
+    
+
+        .submenu.open-submenu {
+            display: block;
+        }
+
+        .submenu li a {
+            text-align: center;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        
+
+
+

@@ -1,0 +1,126 @@
+
+
+.carousel-inner {
+    max-height: 500px;
+}
+
+
+
+.cours-section-1 .container-1 {
+    margin: 0 5% 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    align-items: center;
+}
+
+.cours-section-1 h2 {
+    font-size: 35px;
+    text-align: center; 
+}
+
+.cours-section-1 h4 {
+    font-size: 23px;
+    text-align: center;
+}
+
+.cours-section-1 p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.cours-section-1 img {
+    max-width: 120%;
+    height: auto;
+}
+
+        
+        @media (max-width: 768px) {
+
+            
+            .row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .row-text h1 {
+                font-size: 24px;
+            }
+            
+
+            .course img{
+                
+                width: 130px;
+                height: 130px;
+                
+            }
+            .course h2 {
+                font-size: 16px;
+            }
+            .course ul p {
+                font-size: 13px;
+            }
+            .course ul li {
+                font-size: 10px;
+            }
+
+
+            .course-height img {
+                max-width: 130px;
+                max-height: 173px;
+
+            }
+            .course-height h2 {
+                font-size: 16px;
+            }
+            .course-height ul p {
+                font-size: 13px;
+            }
+            .course-height ul li {
+                font-size: 10px;
+            }
+
+
+            .course-men-women img {
+                
+                max-width: 130px;
+                max-height: 230px;
+            }
+            .course-men-women h2 {
+                font-size: 16px;
+            }
+            .course-men-women ul p {
+                font-size: 13px;
+            }
+            .course-men-women ul li {
+                font-size: 10px;
+            }
+            
+
+
+
+
+            .cours-section-1 .container-1 {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .cours-section-1 h2,
+            .cours-section-1 h4 {
+                text-align: center;
+            }
+            .cours-section-1 p {
+            text-align: justify;
+
+            }
+            .cours-section-1 img {
+            max-width: 100%;
+            height: auto;
+            }    
+
+
+            .row-contact {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+        }
+        

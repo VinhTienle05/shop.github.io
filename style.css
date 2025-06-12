@@ -1,0 +1,268 @@
+.row-text {
+
+}
+.row-text h1 {
+    text-align: center;
+    font-family: 'Righteous';
+}
+
+
+
+
+
+
+
+.course-men-women {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 10px 40px rgb(0 0 0 / 10%);
+  border-radius: 18px;
+  text-align: center; /* Căn giữa các phần tử theo chiều ngang */
+  
+}
+.course-men-women:hover{
+    transition: all 0.3s;
+    box-shadow: 0px 10px 40px rgb(0 0 0 / 30%);
+    transform: translateY(-3px);   
+}
+
+.course-men-women img {
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 230px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 20px; /* Thêm khoảng cách bên dưới ảnh */
+}
+
+.course-men-women h2 {
+  color: #413960;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 0; /* Loại bỏ margin top mặc định */
+  margin-bottom: 10px; /* Thêm khoảng cách bên dưới tiêu đề */
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+.course-men-women ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  color: #585859;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.course-men-women ul p {
+  color: #C66D70;
+  font-size: 20px;
+}
+
+.course-men-women ul li i {
+  margin-right: 10px;
+}
+
+
+/* end men-women */
+
+
+
+
+
+
+
+
+
+
+
+
+.course{
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 10px 40px rgb(0 0 0 / 10%);
+  border-radius: 18px;
+}
+.course:hover{
+  transition: all 0.3s;
+  box-shadow: 0px 10px 40px rgb(0 0 0 / 30%);
+  transform: translateY(-3px);   
+}
+
+.course img{
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    
+}
+.course h2{
+
+    
+color: #413960;
+    
+font-size: 24px;
+    
+line-height: 36px;
+    
+margin-top: 10px;
+}
+
+
+
+
+.course ul{
+    
+list-style: none;
+    
+margin: 0;
+    
+padding: 0;
+    
+display: flex;
+    
+justify-content: space-between;
+}
+
+.course ul p{
+  color: #C66D70;
+  font-size: 20px;
+    
+}
+
+.course ul li{
+    
+color: #585859;
+    
+font-size: 16px;
+    
+line-height: 24px;
+}
+.course ul li i{
+    
+margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.course-height{
+  text-align: center;
+
+  background: #fff;
+
+  padding: 20px;
+
+  box-shadow: 0px 10px 40px rgb(0 0 0 / 10%);
+
+  border-radius: 18px;
+}
+
+.course-height:hover{
+    transition: all 0.3s;
+    box-shadow: 0px 10px 40px rgb(0 0 0 / 30%);
+    transform: translateY(-3px);   
+}
+
+.course-height img{
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    max-width: 300px;
+    height: auto;
+    
+}
+.course-height h2{
+    
+color: #413960;
+    
+font-size: 24px;
+    
+line-height: 36px;
+    
+margin-top: 30px;
+}
+.course-height ul p{
+  color: #C66D70;
+  font-size: 20px;
+}
+
+.course-height ul{
+    
+list-style: none;
+    
+margin: 0;
+    
+padding: 0;
+    
+display: flex;
+    
+justify-content: space-between;
+}
+.course-height ul li{
+    
+color: #585859;
+    
+font-size: 16px;
+    
+line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+.row-contact {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 20px;
+}
+footer{
+  
+ 
+  background: #282531;
+
+  color: #fff;
+}
+
+footer ul{
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li{
+    
+  font-weight: 200;
+}
+footer ul li:first-child{
+  font-weight: 600;
+}
